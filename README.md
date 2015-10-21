@@ -168,7 +168,7 @@ switch ($myNum) {
         default:
             echo "I don't know how much \$i is.";
     }
-    ?>
+ ?>
     
  #
 
