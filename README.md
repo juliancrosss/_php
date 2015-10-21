@@ -170,7 +170,74 @@ switch ($myNum) {
     }
  ?>
     
- #
+ #Accediendo al dato de un Array con [] o {}
+ 
+ <?php
+$myArray = array("do", "re", "mi");
+?>
+
+
+
++------+------+------+
+| "do" | "re" | "mi" |
++------+------+------+
+   0      1      2      
+   
+   
+   
+#Modificando elementos de un Array 
+
+<?php
+$myArray = array("red", "blue", "yellow");
+
+echo $myArray[1];
+// outputs "blue"
+
+$myArray[1] = "green";
+
+echo $myArray[1];
+// outputs "green"
+?>
+
+
+#Eliminar elementos de un Array
+
+*Podemos eliminar elementos de un Array con unset*
+
+<?php
+  $array = array("red", "blue", "green");
+  unset($array[2]);
+?>
+*Eliminar todos los elementos de un Array*
+
+<?php
+  unset($array);
+?>
+
+#Bucle for 
+
+<html>
+  <head>
+    <title>Leap Years</title>
+  </head>
+  <body>
+    <?php
+      for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {
+        echo "<p>$leap</p>";
+      }
+    ?>
+  </body>
+</html>
+
+
+<?php
+for ($i = 0; $i < 10; $i++) {
+    echo $i;
+}
+// echoes 0123456789
+?>
+
+
 
 
 
