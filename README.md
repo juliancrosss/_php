@@ -6,53 +6,49 @@
 
 ##Imprimiendo con PHP con la funcccion echo
 
-<?php echo "Imprimiendo con PHP"; ?>
+    <?php echo "Imprimiendo con PHP"; ?>
 
 *PHP puede ser escrito dentro de las etiquetas HTML*
 
-<p><?php echo "PHP dentro de etiquetas HTML"; ?></p>
+    <p><?php echo "PHP dentro de etiquetas HTML"; ?></p>
 
 ##String
 
 *Un string o cadena es una palabra o una frase dentro de comillas ""*
 
-<?php echo "Hello, world!"; ?>
+    <?php echo "Hello, world!"; ?>
 
 ##concatenacion
 
 *Se realiza concatenacion con el punto .*
 
-<?php  echo "Hello," . " " . "world" . "!"; ?>
+    <?php  echo "Hello," . " " . "world" . "!"; ?>
 
 ##Aritmetica
 
-<?php echo 7 * 5; ?>
+    <?php echo 7 * 5; ?>
 
 #Variables
 
 *Una Variable almacena algun tipo de dato*
 
-$variable = "Julian";
-
-$myVariable = 22;
-
-<?php echo "soy " . $variable ."y tengo " . $myVariable ;
+    $variable = "Julian";
+    $myVariable = 22;
+    <?php echo "soy " . $variable ."y tengo " . $myVariable ;
 
 #Punto y coma
 
 *En cada declaracion se termina con un ";"*
 
-<?php echo "Use your semicolons!"; ?>
+    <?php echo "Use your semicolons!"; ?>
 
 #Comentarios
 
 *Los comentarios empienza con //*
 
-<?php echo "un comentrario abajo"; 
-
- // Esto es un comentario en PHP 
- 
- ?>
+    <?php echo "un comentrario abajo"; 
+    // Esto es un comentario en PHP 
+    ?>
  
  #Comparaciones 
  
@@ -72,25 +68,24 @@ $myVariable = 22;
 
 # Declaracion if 
 
-<?php
-   $numero = 7
-   if($numero < 7){
-      echo "numero es menor";
-   }
- ?>
+    <?php
+      $numero = 7
+      if($numero < 7){
+       echo "numero es menor";
+     }
+     ?>
  
 #Else
 
-<?php
-  $name = "Edgar";
-
-  if ($name == "Simon") {
-    print "I know you!";
-  }
-  else {
-    print "Who are you?";
-  }
-?>
+    <?php
+      $name = "Edgar";
+      if ($name == "Simon") {
+        print "I know you!";
+      }
+      else {
+          print "Who are you?";
+       }
+     ?>
 
 
 #Flujos de Control con if /elseif / else
