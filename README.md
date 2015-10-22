@@ -50,9 +50,9 @@
     // Esto es un comentario en PHP 
     ?>
  
- #Comparaciones 
+#Comparaciones 
  
- *Lista de comparaciones*
+*Lista de comparaciones*
  
 *> Mayor que
 
@@ -90,51 +90,47 @@
 
 #Flujos de Control con if /elseif / else
 
-if (condition) {
-
-} elseif (condition) {
-
-} else {
-
-}
+    if (condition) {
+    } elseif (condition) {
+    } else {
+    }
 
 #Setencia Switch
 
 *Busca el valor de switch y sale con break del switch*
 
-switch (2) {
-        case 0:
-            echo 'The value is 0';
+    switch (2) {
+            case 0:
+                echo 'The value is 0';
             break;
-        case 1:
-            echo 'The value is 1';
+            case 1:
+                echo 'The value is 1';
             break;
-        case 2:
-            echo 'The value is 2';
+            case 2:
+                echo 'The value is 2';
             break;
-        default:
-            echo "The value isn't 0, 1 or 2";
-    }
-    ?>
+            default:
+                echo "The value isn't 0, 1 or 2";
+        }
+    
     
     
 *Ejemplo*
 
-$myNum = 2;
-
-switch ($myNum) {
-    case 1:
-        echo "1";
+    $myNum = 2;
+    switch ($myNum) {
+        case 1:
+            echo "1";
         break;
-    case 2:
-        echo "2";
+        case 2:
+            echo "2";
         break;
-    case 3:
-        echo "3";
+        case 3:
+            echo "3";
         break;
-    default:
-        echo "None of the above";
-}
+        default:
+            echo "None of the above";
+    }   
 
 
 
@@ -142,95 +138,92 @@ switch ($myNum) {
 
 *Se puede seleccionar varios switch sin agregar el break*
 
- <?php
-    $i = 5;
-    
-    switch ($i) {
-        case 0:
-            echo '$i is 0.';
+    <?php
+        $i = 5;
+        switch ($i) {
+            case 0:
+                echo '$i is 0.';
             break;
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            echo '$i is somewhere between 1 and 5.';
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                echo '$i is somewhere between 1 and 5.';
             break;
-        case 6:
-        case 7:
-            echo '$i is either 6 or 7.';
+            case 6:
+            case 7:
+                echo '$i is either 6 or 7.';
             break;
-        default:
-            echo "I don't know how much \$i is.";
-    }
- ?>
+            default:
+                echo "I don't know how much \$i is.";
+        }
+    ?>
     
  #Accediendo al dato de un Array con [] o {}
- 
- <?php
-$myArray = array("do", "re", "mi");
-?>
+
+    <?php
+        $myArray = array("do", "re", "mi");
+    ?>
 
 
 
-+------+------+------+
-| "do" | "re" | "mi" |
-+------+------+------+
-   0      1      2      
+        +------+------+------+
+        | "do" | "re" | "mi" |
+        +------+------+------+
+            0      1      2      
    
    
    
 #Modificando elementos de un Array 
 
-<?php
-$myArray = array("red", "blue", "yellow");
-
-echo $myArray[1];
-// outputs "blue"
-
-$myArray[1] = "green";
-
-echo $myArray[1];
-// outputs "green"
-?>
+    <?php
+    $myArray = array("red", "blue", "yellow");
+    echo $myArray[1];
+    // outputs "blue"
+    $myArray[1] = "green";
+    echo $myArray[1];
+    // outputs "green"
+    ?>
 
 
 #Eliminar elementos de un Array
 
 *Podemos eliminar elementos de un Array con unset*
 
-<?php
-  $array = array("red", "blue", "green");
-  unset($array[2]);
-?>
+    <?php
+    $array = array("red", "blue", "green");
+    unset($array[2]);
+    ?>
+    
 *Eliminar todos los elementos de un Array*
 
-<?php
-  unset($array);
-?>
+    <?php
+    unset($array);
+    ?>
 
 #Bucle for 
 
-<html>
-  <head>
-    <title>Leap Years</title>
-  </head>
-  <body>
+    <html>
+    <head>
+        <title>Leap Years</title>
+    </head>
+    <body>
+        <?php
+        for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {
+            echo "<p>$leap</p>";
+        }
+        ?>
+    </body>
+    </html>
+
+
     <?php
-      for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {
-        echo "<p>$leap</p>";
-      }
+    for ($i = 0; $i < 10; $i++) {
+        echo $i;
+    }
+    // echoes 0123456789
     ?>
-  </body>
-</html>
-
-
-<?php
-for ($i = 0; $i < 10; $i++) {
-    echo $i;
-}
-// echoes 0123456789
-?>
 
 
 
